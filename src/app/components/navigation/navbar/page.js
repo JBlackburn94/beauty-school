@@ -48,13 +48,13 @@ export default function Navbar() {
             </ul>
 
             <div onClick={() => setNav(!nav)}
-                className="z-10 pr-4 text-white cursor-pointer md:hidden"
+                className="z-40 pr-4 text-white cursor-pointer md:hidden"
             >
                 {nav ? <FaTimes size={30}/> : <FaBars size={30}/>}
             </div>
 
             {nav && (
-                <ul className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen text-white bg-black">
+                <ul className="absolute top-0 left-0 z-10 flex flex-col items-center justify-center w-full h-screen text-white bg-black">
                     {links.map(({ id, title }) => (
                         <li key={id} className="my-4 text-3xl font-semibold capitalize">
                             <Link onClick={() => setNav(!nav)} href={title}>{title}</Link>
