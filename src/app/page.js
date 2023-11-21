@@ -20,7 +20,7 @@ export default function Home() {
         />
         <p className='my-2 text-2xl font-bold'>Happiness</p>
         <div className='flex flex-col my-2 md:flex-row'>
-          <button className='p-2 mx-4 uppercase duration-200 bg-black hover:scale-110 btn'>
+          <button className='p-2 mx-4 mb-2 uppercase duration-200 bg-black hover:scale-110 btn md:mb-0'>
             <a href="https://open.spotify.com/album/0DudmycdWDcNGWR6meoq3b" target='_blank' >Listen Here</a>
           </button>
           <button className='p-2 mx-4 uppercase duration-200 bg-black hover:scale-110 btn'>
