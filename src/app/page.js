@@ -14,7 +14,7 @@ export default function Home() {
         <Image 
           src={Logo}
           alt='Beauty School Logo'
-          className='w-1/3 h-auto mb-4 md:w-4/5'
+          className='w-1/2 h-auto mt-4 mb-4 md:w-4/5'
         />
         <p className='text-2xl'>Happiness</p>
         <p>Out Now</p>
