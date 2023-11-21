@@ -31,7 +31,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between w-full h-20 bg-black">
             <div>
                 <Image 
-                    src="/logo (1).webp"
+                    src="/logo.webp"
                     width={150}
                     height={150}
                     alt="Beauty School Logo"
@@ -39,9 +39,9 @@ export default function Navbar() {
                     className="mx-4"
                 />
             </div>
-            <ul className="hidden font-semibold text-black md:flex">
+            <ul className="hidden font-semibold text-white md:flex">
                 {links.map(({ id, title }) => (
-                    <li key={id} className="p-2 mx-4 capitalize duration-200 bg-white rounded-sm hover:text-white hover:bg-black">
+                    <li key={id} className="p-2 mx-4 capitalize duration-200 hover:text-yellow-400">
                         <Link href={title}>{title}</Link>
                     </li>
                 ))}
