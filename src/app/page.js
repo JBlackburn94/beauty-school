@@ -9,13 +9,13 @@ export default function Home() {
       <Image 
         src={Artwork}
         alt="Happiness Album Artwork"
-        className="w-1/2 h-auto md:w-1/3 drop-shadow-2xl animate-fade animate-once animate-duration-[2000ms] animate-delay-[2000ms]"
+        className="w-1/2 h-auto md:w-1/3 md:drop-shadow-2xl animate-fade animate-once animate-duration-[2000ms] animate-delay-[2000ms]"
       />
       <div className='flex flex-col items-center justify-center'>
         <Image 
           src={Logo}
           alt='Beauty School Logo'
-          className='w-1/2 h-auto my-2 md:w-4/5 drop-shadow-2xl animate-jump-in animate-once animate-duration-[500ms] animate-delay-[1000ms]'
+          className='w-1/2 h-auto my-2 md:w-4/5 md:drop-shadow-2xl animate-jump-in animate-once animate-duration-[500ms] animate-delay-[1000ms]'
         />
         <p className='my-2 text-2xl font-bold animate-fade animate-once animate-duration-[2000ms] animaion-delay-2000 animate-delay-[2000ms]'>Happiness</p>
         <div className='flex flex-col my-2 md:flex-row animate-fade animate-once animate-duration-[2000ms]  animate-delay-[2000ms]'>
