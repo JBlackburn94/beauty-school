@@ -35,11 +35,11 @@ export default function Navbar() {
                     width={150}
                     height={150}
                     alt="Beauty School Logo"
-                    href="/home"
+                    href="/"
                     className="mx-4"
                 />
             </div>
-            <ul className="hidden font-semibold text-white md:flex">
+            <ul className="hidden text-white md:flex">
                 {links.map(({ id, title }) => (
                     <li key={id} className="p-2 mx-4 capitalize duration-200 hover:text-yellow-400">
                         <Link href={title}>{title}</Link>

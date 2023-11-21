@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import Logo from "/public/logo.webp"
 import Artwork from "/public/artwork.webp"
-import SDRLogo from "/public/SDR logo.webp"
-import { Link } from 'react-router-dom'
+import SDRLogo from "/public/SDRLogo.webp"
 
 export default function Home() {
   return (
