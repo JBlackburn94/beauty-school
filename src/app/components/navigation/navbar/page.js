@@ -62,9 +62,9 @@ export default function Navbar() {
 
             {nav && (
                 <ul className="absolute top-0 left-0 z-10 flex flex-col items-center justify-center w-full h-screen text-white bg-black">
-                    {links.map(({ id, title }) => (
+                    {links.map(({ id, title, link, att }) => (
                         <li key={id} className="my-4 text-3xl font-semibold capitalize">
-                            <Link onClick={() => setNav(!nav)} href={title}>{title}</Link>
+                            <Link onClick={() => setNav(!nav)} target={att} href={link}>{title}</Link>
                         </li>
                     ))}
                     <li className="flex mt-8">
