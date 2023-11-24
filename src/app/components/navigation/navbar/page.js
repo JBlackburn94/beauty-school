@@ -11,33 +11,34 @@ export default function Navbar() {
     const links = [
         {
             id: '1',
-            title: 'home',
-        },
-        {
-            id: '2',
             title: 'about',
         },
         {
-            id: '3',
+            id: '2',
             title: 'shows',
         },
         {
-            id: '4',
+            id: '3',
             title: 'merch',
+        },
+        {
+            id: '4',
+            title: 'music',
         },
     ]
 
     return (
         <nav className="flex items-center justify-between w-full h-20 bg-black">
             <div>
-                <Image 
-                    src="/logo.webp"
-                    width={150}
-                    height={150}
-                    alt="Beauty School Logo"
-                    href="/"
-                    className="mx-4"
-                />
+                <a href="/">
+                    <Image 
+                        src="/logo.webp"
+                        width={150}
+                        height={150}
+                        alt="Beauty School Logo"
+                        className="mx-4"
+                    />
+                </a>
             </div>
             <ul className="hidden text-white md:flex">
                 {links.map(({ id, title }) => (
