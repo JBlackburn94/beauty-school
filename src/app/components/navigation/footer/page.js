@@ -10,7 +10,7 @@ export default function Footer() {
             <Image 
                 src={Logo}
                 alt="Beauty School Logo"
-                className="w-1/2"
+                className="hidden w-1/2 md:block"
             />
         </aside> 
         <nav>
