@@ -12,18 +12,24 @@ export default function Navbar() {
         {
             id: '1',
             title: 'about',
+            link: '/about'
         },
         {
             id: '2',
             title: 'shows',
+            link: 'https://www.songkick.com/artists/1084890-beauty-school',
+            att: '_blank',
         },
         {
             id: '3',
             title: 'merch',
+            link: 'https://beautyschooluk.bandcamp.com/merch',
+            att: '_blank',
         },
         {
             id: '4',
             title: 'music',
+            link: '/music'
         },
     ]
 
@@ -41,9 +47,9 @@ export default function Navbar() {
                 </a>
             </div>
             <ul className="hidden text-white md:flex">
-                {links.map(({ id, title }) => (
+                {links.map(({ id, title, link, att }) => (
                     <li key={id} className="p-2 mx-4 capitalize duration-200 hover:text-yellow-400">
-                        <Link href={title}>{title}</Link>
+                        <Link target={att} href={link}>{title}</Link>
                     </li>
                 ))}
             </ul>
@@ -62,11 +68,21 @@ export default function Navbar() {
                         </li>
                     ))}
                     <li className="flex mt-8">
-                        <FaFacebook href="facebook.com/beautyschooluk" className="mx-2 hover:scale-110" size={30}/>
-                        <FaInstagram href="instagram.com/beautyschooluk" className="mx-2 hover:scale-110" size={30}/>
-                        <FaSpotify href="https://open.spotify.com/artist/46yPZXaKNR5nkEqMzhifG6" className="mx-2 hover:scale-110" size={30}/>
-                        <FaTwitter href="https://twitter.com/btyschl?lang=en-GB" className="mx-2 hover:scale-110" size={30}/>
-                        <FaYoutube href="https://www.youtube.com/channel/UCwkFeK8zVScddmxWbjwcfAg" className="mx-2 hover:scale-110" size={30}/>
+                        <Link href="https://www.facebook.com/beautyschooluk" target="_blank">
+                            <FaFacebook className="mx-2 hover:scale-110" size={30}/>
+                        </Link>
+                        <Link href="https://open.spotify.com/artist/46yPZXaKNR5nkEqMzhifG6" target="_blank">
+                            <FaSpotify className="mx-2 hover:scale-110" size={30} />
+                        </Link>
+                        <Link href="https://www.instagram.com/beautyschooluk" target="_blank">
+                            <FaInstagram className="mx-2 hover:scale-110" size={30} />
+                        </Link>
+                        <Link href="https://www.twitter.com/btyschl?lang=en-GB" target="_blank">
+                            <FaTwitter className="mx-2 hover:scale-110" size={30} />
+                        </Link>
+                        <Link href="https://www.youtube.com/channel/UCwkFeK8zVScddmxWbjwcfAg" target="_blank">
+                            <FaYoutube className="mx-2 hover:scale-110" size={30} />
+                        </Link>
                     </li>
                 </ul>
             )}
